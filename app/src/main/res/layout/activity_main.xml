@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/background2"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    >
+
+    <ImageView
+
+        android:id="@+id/left_Cursor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sharp_keyboard_arrow_left_24"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sunset"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"/>
+
+    <ImageView
+        android:id="@+id/more"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_more_vert_24"
+        android:layout_marginLeft="40dp"
+        android:layout_toEndOf="@+id/txt_title"/>
+
+
+    <ImageView
+        android:id="@+id/img_sunset"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txt_title"
+        android:layout_marginTop="50dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/sunsett" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="250sp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/img_sunset"
+        android:progress="50"
+        android:progressTint="@color/orange"
+        android:max="60"
+        android:thumbTint="@color/white"
+        android:progressBackgroundTint="@color/yellow"/>
+
+    <TextView
+        android:id="@+id/txt_superman"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/superman"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/seekBar"
+        android:textColor="@color/orange"/>
+
+    <TextView
+        android:id="@+id/txt_sunset"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sunset"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/txt_superman"
+        android:textColor="@color/yellow"/>
+
+
+    <ImageView
+        android:id="@+id/previous"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="110sp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/txt_sunset"
+        android:src="@drawable/baseline_skip_previous_24"
+        android:importantForAccessibility="no"
+        />
+
+    <ImageView
+        android:id="@+id/playCircle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/previous"
+        android:layout_below="@+id/txt_sunset"
+        android:src="@drawable/baseline_play_circle_filled_24"
+        android:importantForAccessibility="no"
+        />
+
+    <ImageView
+        android:id="@+id/playCircleFilled"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/previous"
+        android:layout_below="@+id/txt_sunset"
+        android:src="@drawable/baseline_play_arrow_24"
+        android:importantForAccessibility="no"
+        />
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/playCircle"
+        android:layout_below="@+id/txt_sunset"
+        android:src="@drawable/baseline_skip_next_24"
+        android:importantForAccessibility="no"
+        />
+
+</RelativeLayout>
